@@ -13,5 +13,5 @@ setup(
     python_requires='>=3.6',
     setup_requires=['setuptools-markdown'],
     url="https://github.com/cryptomaniac512/dotenv-config",
-    version="0.0.1",
+    version="0.0.2",
 )
