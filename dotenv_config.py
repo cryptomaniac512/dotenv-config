@@ -16,14 +16,14 @@ class Config:
     def __init__(self, path='.env'):
         load_dotenv(path)
 
-    def __call__(self, name, conversion=str, default=None):
+    def __call__(self, name, conversion=str, **kwargs):
         value = os.environ.get(name, None)
         if not value:
-            if not default:
+            if 'default' not in kwargs:
                 raise ConfigValueNotFound(
                     f'"{name}" not found in your configuration.')
             else:
-                return default
+                return kwargs['default']
 
         converter = self.conversion.get(conversion, conversion)
         return converter(value)

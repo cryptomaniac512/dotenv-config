@@ -58,3 +58,16 @@ def test_raises_if_not_found_and_no_default(config):
             ConfigValueNotFound,
             message='"Lol Kek" not found in your configuration.'):
         config('Lol Kek')
+
+
+@pytest.mark.parametrize('value', (
+    None,
+    '',
+    ' ',
+    0,
+    {},
+    [],
+    (),
+))
+def test_does_not_raises_if_default_is_equal_to_none(value, config):
+    assert config('Lol Kek', default=value) == value
