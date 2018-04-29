@@ -13,5 +13,5 @@ setup(
     python_requires='>=3.6',
     setup_requires=['setuptools-markdown'],
     url="https://github.com/sivakov512/dotenv-config",
-    version="0.1.1",
+    version="0.1.2",
 )

@@ -5,7 +5,7 @@ Simple `.env` config loader with type casting.
 [![Build Status](https://travis-ci.org/sivakov512/dotenv-config.svg?branch=master)](https://travis-ci.org/sivakov512/dotenv-config)
 [![Coverage Status](https://coveralls.io/repos/github/sivakov512/dotenv-config/badge.svg?branch=master)](https://coveralls.io/github/sivakov512/dotenv-config?branch=master)
 ![Python versions](https://img.shields.io/badge/python-3.6-blue.svg)
-[![PyPi](https://img.shields.io/badge/PyPi-0.1.0-yellow.svg)](https://pypi.python.org/pypi/dotenv-config)
+[![PyPi](https://img.shields.io/badge/PyPi-0.1.2-yellow.svg)](https://pypi.python.org/pypi/dotenv-config)
 
 Installation
 ---
