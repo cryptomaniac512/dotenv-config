@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     author="Nikita Sivakov",
-    author_email="cryptomaniac.512@gmail.com",
+    author_email="sivakov512@gmail.com",
     description="Simple dotenv loader with the possibility of casting types",
     install_requires=['python-dotenv'],
     keywords="dotenv config env types cast",
@@ -12,6 +12,6 @@ setup(
     py_modules=['dotenv_config'],
     python_requires='>=3.6',
     setup_requires=['setuptools-markdown'],
-    url="https://github.com/cryptomaniac512/dotenv-config",
-    version="0.1.0",
+    url="https://github.com/sivakov512/dotenv-config",
+    version="0.1.1",
 )
