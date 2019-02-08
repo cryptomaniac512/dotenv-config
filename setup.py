@@ -16,9 +16,10 @@ setup(
     keywords="dotenv config env types cast",
     license="MIT",
     long_description=read("README.md"),
+    long_description_content_type="text/markdown",
     name="dotenv-config",
     py_modules=['dotenv_config'],
     python_requires='>=3.6',
     url="https://github.com/sivakov512/dotenv-config",
-    version="0.1.3",
+    version="0.1.4",
 )
