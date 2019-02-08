@@ -1,4 +1,12 @@
+import os
+
 from setuptools import setup
+
+
+def read(fname):
+    with open(os.path.join(os.path.dirname(__file__), fname)) as _f:
+        return _f.read()
+
 
 setup(
     author="Nikita Sivakov",
@@ -7,11 +15,10 @@ setup(
     install_requires=['python-dotenv'],
     keywords="dotenv config env types cast",
     license="MIT",
-    long_description_markdown_filename='README.md',
+    long_description=read("README.md"),
     name="dotenv-config",
     py_modules=['dotenv_config'],
     python_requires='>=3.6',
-    setup_requires=['setuptools-markdown'],
     url="https://github.com/sivakov512/dotenv-config",
-    version="0.1.2",
+    version="0.1.3",
 )
